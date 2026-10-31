@@ -44,3 +44,9 @@ const david = {
 <p align="center">
   <a href="https://github.com/CDAVIO?tab=repositories"><img src="assets/btn-repos.svg" alt="View my repositories" height="56" /></a>
 </p>
+
+### 🧠 I build
+
+<p align="center">
+  <img src="assets/goal.svg" alt="I build. Goal: Trading Super Intelligence, loading" width="100%" />
+</p>
