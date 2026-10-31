@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" />
+  <a href="https://www.instagram.com/cdav.io/"><img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" /></a>
 </p>
 
 <p align="center">
-  <a href="https://cdav.io/"><img src="https://img.shields.io/badge/cdav.io-1c0b36?style=for-the-badge&logo=googlechrome&logoColor=ffd905" alt="Website" /></a>
-  <a href="https://x.com/cdav_io"><img src="https://img.shields.io/badge/@cdav__io-1c0b36?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://www.linkedin.com/in/cristea-david"><img src="https://img.shields.io/badge/LinkedIn-1c0b36?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
-  <a href="https://www.youtube.com/@cdav_io"><img src="https://img.shields.io/badge/YouTube-1c0b36?style=for-the-badge&logo=youtube&logoColor=FF0000" alt="YouTube" /></a>
-  <a href="https://www.instagram.com/cdav.io/"><img src="https://img.shields.io/badge/Instagram-1c0b36?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram" /></a>
+  <a href="https://cdav.io/"><img src="assets/btn-web.svg" alt="cdav.io" height="44" /></a>
+  <a href="https://x.com/cdav_io"><img src="assets/btn-x.svg" alt="X @cdav_io" height="44" /></a>
+  <a href="https://www.linkedin.com/in/cristea-david"><img src="assets/btn-linkedin.svg" alt="LinkedIn" height="44" /></a>
+  <a href="https://www.youtube.com/@cdav_io"><img src="assets/btn-youtube.svg" alt="YouTube" height="44" /></a>
+  <a href="https://www.instagram.com/cdav.io/"><img src="assets/btn-instagram.svg" alt="Instagram" height="44" /></a>
 </p>
 
 ---
@@ -35,31 +35,32 @@ const david = {
 |---|---|
 | 📈 **Trading** | Systems, market structure tools and AI for traders |
 | 🍎 **macOS** | Native utilities that keep your Mac clean, fast and organized |
-| 🛠️ **Dev tools** | Small, sharp tools that save hours: terminal, browser, automation |
+| 🛠️ **Dev tools** | Tools that save hours: terminal, browser, automation |
 | 🎮 **Games** | Game dev experiments, from prototypes to playable builds |
 | 🌐 **Web** | Fast, accessible sites and apps, built Deaf-first |
 
-### 🧰 Skills
+### 🤖 AI-first builder
 
-**Languages**
-<br />
-<img src="https://skillicons.dev/icons?i=ts,js,python,swift,bash,html,css&theme=dark" alt="Languages" />
+I use AI every day to **save time** and ship faster, from code to content.
 
-**Frontend & backend**
-<br />
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,tailwind,vite,threejs&theme=dark" alt="Frontend and backend" />
+| | What I make with AI |
+|---|---|
+| 💻 **Code & apps** | macOS tools, websites, trading tools and games |
+| 📄 **Documents** | Courses, guides, trading plans and reports |
+| 🖼️ **Images** | Thumbnails, social posts, brand visuals |
+| 🎬 **Video** | Lessons, shorts and edits for YouTube and Instagram |
+| 🎵 **Audio & music** | Music, sound and voice for videos |
 
-**Game dev & 3D**
+**Tools I use**
 <br />
-<img src="https://skillicons.dev/icons?i=unity,godot,blender&theme=dark" alt="Game dev" />
-
-**Data, cloud & deploy**
-<br />
-<img src="https://skillicons.dev/icons?i=supabase,firebase,postgres,docker,vercel,cloudflare&theme=dark" alt="Cloud" />
-
-**Tools & platforms**
-<br />
-<img src="https://skillicons.dev/icons?i=apple,linux,git,github,vscode,figma&theme=dark" alt="Tools" />
+<img src="https://img.shields.io/badge/Claude-1c0b36?style=for-the-badge&logo=claude&logoColor=D97757" alt="Claude" />
+<img src="https://img.shields.io/badge/Figma-1c0b36?style=for-the-badge&logo=figma&logoColor=F24E1E" alt="Figma" />
+<img src="https://img.shields.io/badge/Canva-1c0b36?style=for-the-badge&logoColor=white" alt="Canva" />
+<img src="https://img.shields.io/badge/Framer-1c0b36?style=for-the-badge&logo=framer&logoColor=white" alt="Framer" />
+<img src="https://img.shields.io/badge/Notion-1c0b36?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
+<img src="https://img.shields.io/badge/Supabase-1c0b36?style=for-the-badge&logo=supabase&logoColor=3ECF8E" alt="Supabase" />
+<img src="https://img.shields.io/badge/GitHub-1c0b36?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/macOS-1c0b36?style=for-the-badge&logo=apple&logoColor=white" alt="macOS" />
 
 ### 🚀 Repositories
 
