@@ -45,6 +45,12 @@ const david = {
 | 🧹 **[MacUp Cleaner](https://github.com/CDAVIO/MacUp-Cleaner-CDAV.IO)** | Keeps your Mac clean and fast | ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white) ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white) |
 | 🔤 **[Diacritics Remover](https://github.com/CDAVIO/Diacritics-remover)** | Strips diacritics from text in one click | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
 
+### 📈 GitHub streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=CDAVIO&theme=github-dark-blue&hide_border=true&background=0D1117&ring=A371F7&fire=1F6FEB&currStreakLabel=58A6FF" alt="GitHub streak" />
+</p>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:a371f7,50:1f6feb,100:0d1117&section=footer" alt="footer" />
 </p>
