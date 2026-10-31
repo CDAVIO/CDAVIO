@@ -1,56 +1,79 @@
-<!-- Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1f6feb,100:a371f7&text=CDAV.IO&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=Founder%20%C2%B7%20Builder%20%C2%B7%20Crypto%20Trading%20Education&descAlignY=60&descSize=18&animation=fadeIn" alt="CDAV.IO banner" />
+  <img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://cdav.io/">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=620&lines=Hey%2C+I'm+David+%F0%9F%91%8B;Founder+of+CDAV.IO;Teaching+crypto+trading+the+right+way;Building+tools+for+macOS+%26+the+web" alt="Typing intro" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://cdav.io/"><img src="https://img.shields.io/badge/cdav.io-0d1117?style=for-the-badge&logo=googlechrome&logoColor=58A6FF" alt="Website" /></a>
-  <a href="https://x.com/cdav_io"><img src="https://img.shields.io/badge/@cdav__io-0d1117?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://www.linkedin.com/in/cristea-david"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
-  <a href="https://www.youtube.com/@cdav_io"><img src="https://img.shields.io/badge/YouTube-0d1117?style=for-the-badge&logo=youtube&logoColor=FF0000" alt="YouTube" /></a>
-  <a href="https://www.instagram.com/cdav.io"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram" /></a>
-  <img src="https://komarev.com/ghpvc/?username=CDAVIO&style=for-the-badge&color=1f6feb&label=PROFILE+VIEWS" alt="Profile views" />
+  <a href="https://cdav.io/"><img src="https://img.shields.io/badge/cdav.io-1c0b36?style=for-the-badge&logo=googlechrome&logoColor=ffd905" alt="Website" /></a>
+  <a href="https://x.com/cdav_io"><img src="https://img.shields.io/badge/@cdav__io-1c0b36?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://www.linkedin.com/in/cristea-david"><img src="https://img.shields.io/badge/LinkedIn-1c0b36?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
+  <a href="https://www.youtube.com/@cdav_io"><img src="https://img.shields.io/badge/YouTube-1c0b36?style=for-the-badge&logo=youtube&logoColor=FF0000" alt="YouTube" /></a>
+  <a href="https://www.instagram.com/cdav.io/"><img src="https://img.shields.io/badge/Instagram-1c0b36?style=for-the-badge&logo=instagram&logoColor=E4405F" alt="Instagram" /></a>
 </p>
 
 ---
 
-### 🧠 About me
+### 🧏 About me
+
+I'm **David**, a **Deaf** trader and developer from **Romania 🇷🇴**.
+I build trading tools, macOS apps, developer utilities and games, and I teach trading through **[CDAV.IO](https://cdav.io/)**.
 
 ```js
 const david = {
-  based:     "Romania 🇷🇴",
-  building:  "CDAV.IO — crypto trading education",
-  shipping:  ["macOS utilities", "web tools", "content"],
-  mindset:   "ship fast, learn faster",
+  role:       "Trader · Developer · Founder of CDAV.IO",
+  mission:    "Building a trading super intelligence",
+  based:      "Romania 🇷🇴",
+  deaf:       true,
+  signs:      ["LSR 🇷🇴", "ISL 🌍", "ASL 🇺🇸"],
+  builds:     ["trading tools", "macOS apps", "dev tools", "games", "web apps"],
+  mindset:    "ship fast, learn faster",
 };
 ```
 
-### 🛠️ Toolbox
+### 🎯 What I build
 
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,bash,apple,git,github,vscode,figma,supabase&perline=14" alt="Skills" />
-</p>
+| | |
+|---|---|
+| 📈 **Trading** | Systems, market structure tools and AI for traders |
+| 🍎 **macOS** | Native utilities that keep your Mac clean, fast and organized |
+| 🛠️ **Dev tools** | Small, sharp tools that save hours: terminal, browser, automation |
+| 🎮 **Games** | Game dev experiments, from prototypes to playable builds |
+| 🌐 **Web** | Fast, accessible sites and apps, built Deaf-first |
 
-### 🚀 Featured projects
+### 🧰 Skills
+
+**Languages**
+<br />
+<img src="https://skillicons.dev/icons?i=ts,js,python,swift,bash,html,css&theme=dark" alt="Languages" />
+
+**Frontend & backend**
+<br />
+<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,tailwind,vite,threejs&theme=dark" alt="Frontend and backend" />
+
+**Game dev & 3D**
+<br />
+<img src="https://skillicons.dev/icons?i=unity,godot,blender&theme=dark" alt="Game dev" />
+
+**Data, cloud & deploy**
+<br />
+<img src="https://skillicons.dev/icons?i=supabase,firebase,postgres,docker,vercel,cloudflare&theme=dark" alt="Cloud" />
+
+**Tools & platforms**
+<br />
+<img src="https://skillicons.dev/icons?i=apple,linux,git,github,vscode,figma&theme=dark" alt="Tools" />
+
+### 🚀 Repositories
 
 | Project | What it does | Stack |
 |---|---|---|
-| 📸 **[Sort](https://github.com/CDAVIO/Sort)** | Free offline photo organizer for macOS & Windows — sorts your camera roll by device, date and place | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) ![Stars](https://img.shields.io/github/stars/CDAVIO/Sort?style=flat-square&color=f1c40f) |
-| 🧹 **[MacUp Cleaner](https://github.com/CDAVIO/MacUp-Cleaner-CDAV.IO)** | Keeps your Mac clean and fast | ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white) ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white) |
-| 🔤 **[Diacritics Remover](https://github.com/CDAVIO/Diacritics-remover)** | Strips diacritics from text in one click | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
+| 📸 **[Sort](https://github.com/CDAVIO/Sort)** | Free photo organizer for macOS and Windows. Sorts your camera roll into folders by device, date and place, offline, with no account. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) ![Stars](https://img.shields.io/github/stars/CDAVIO/Sort?style=flat-square&color=ffd905&labelColor=1c0b36) |
+| 🧹 **[MacUp Cleaner](https://github.com/CDAVIO/MacUp-Cleaner-CDAV.IO)** | Open-source Mac health tool for the Terminal: clears hidden "System Data" caches, checks battery, SSD, RAM, CPU, GPU and security, exports a PDF report. | ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white) ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white) |
+| 🔤 **[Diacritics Remover](https://github.com/CDAVIO/Diacritics-remover)** | Paste text with ș ț ă â î, Polish, Nordic or German letters and get clean plain text, copied automatically. Runs in your browser. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
+| 🌐 **[CDAV.IO](https://github.com/CDAVIO/CDAV.IO)** | Landing page for CDAV.IO: trading education in International Sign Language. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
 
 ### 📈 GitHub streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=CDAVIO&theme=github-dark-blue&hide_border=true&background=0D1117&ring=A371F7&fire=1F6FEB&currStreakLabel=58A6FF" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=CDAVIO&theme=github-dark-blue&hide_border=true&background=1C0B36&ring=FFD905&fire=FFD905&currStreakLabel=FFD905&sideLabels=E9E3FF&dates=A78BFA&stroke=3B0F7A" alt="GitHub streak" />
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:a371f7,50:1f6feb,100:0d1117&section=footer" alt="footer" />
-</p>
+<p align="center"><sub>Education only. Not financial advice.</sub></p>

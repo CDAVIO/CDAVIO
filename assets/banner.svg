@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="CDAV.IO — Trader | Building a trading super intelligence">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c0418"/>
+      <stop offset=".55" stop-color="#1c0b36"/>
+      <stop offset="1" stop-color="#2a0f52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".42" r=".5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#4c1d95" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d28d9" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#2e1065" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b0f7a" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#12052a" stop-opacity="1"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#a78bfa" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
+    <style>
+      .t { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif; }
+      .bub { fill: #c4b5fd; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+
+    <!-- rising candlestick trace -->
+    <g opacity=".22" stroke-width="2">
+      <g stroke="#22c55e" fill="#22c55e">
+        <line x1="70" y1="190" x2="70" y2="236"/><rect x="65" y="200" width="10" height="26"/>
+        <line x1="130" y1="170" x2="130" y2="220"/><rect x="125" y="180" width="10" height="30"/>
+        <line x1="1040" y1="70" x2="1040" y2="120"/><rect x="1035" y="80" width="10" height="28"/>
+        <line x1="1130" y1="40" x2="1130" y2="96"/><rect x="1125" y="50" width="10" height="34"/>
+      </g>
+      <g stroke="#ef4444" fill="#ef4444">
+        <line x1="100" y1="186" x2="100" y2="226"/><rect x="95" y="194" width="10" height="20"/>
+        <line x1="1085" y1="60" x2="1085" y2="110"/><rect x="1080" y="70" width="10" height="24"/>
+      </g>
+    </g>
+
+    <!-- bubbles -->
+    <g>
+      <circle class="bub" cx="180" cy="330" r="3" opacity=".5">
+        <animate attributeName="cy" values="330;-10" dur="7s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="bub" cx="340" cy="330" r="2" opacity=".4">
+        <animate attributeName="cy" values="330;-10" dur="9s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="bub" cx="860" cy="330" r="3.5" opacity=".45">
+        <animate attributeName="cy" values="330;-10" dur="8s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="bub" cx="980" cy="330" r="2" opacity=".5">
+        <animate attributeName="cy" values="330;-10" dur="6s" begin="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="bub" cx="620" cy="330" r="2.5" opacity=".35">
+        <animate attributeName="cy" values="330;-10" dur="10s" begin="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- title -->
+    <text class="t" x="600" y="150" text-anchor="middle" font-size="104" font-weight="800" letter-spacing="-3">
+      <tspan fill="#ffffff">CDAV.</tspan><tspan fill="#ffd905">IO</tspan>
+    </text>
+    <text class="t" x="600" y="200" text-anchor="middle" font-size="26" font-weight="600" fill="#e9e3ff" letter-spacing=".5">
+      Trader <tspan fill="#ffd905">|</tspan> Building a trading super intelligence
+    </text>
+
+    <!-- water waves (each path is two identical 1200px periods, slid by one period) -->
+    <g>
+      <path fill="url(#w1)" d="M0 250 C150 225 300 225 450 250 S750 275 900 250 S1050 225 1200 250 C1350 225 1500 225 1650 250 S1950 275 2100 250 S2250 225 2400 250 V320 H0Z">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="16s" repeatCount="indefinite"/>
+      </path>
+      <path fill="url(#w2)" d="M0 268 C200 248 400 288 600 268 S1000 248 1200 268 C1400 248 1600 288 1800 268 S2200 248 2400 268 V320 H0Z">
+        <animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="12s" repeatCount="indefinite"/>
+      </path>
+      <path fill="url(#w3)" d="M0 288 C150 276 300 300 450 288 S750 276 900 288 S1050 300 1200 288 C1350 276 1500 300 1650 288 S1950 276 2100 288 S2250 300 2400 288 V320 H0Z">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</svg>
