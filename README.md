@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" />
+  <img src="assets/cdavio-banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" />
 </p>
 
 <p align="center">
