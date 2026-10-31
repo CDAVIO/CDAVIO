@@ -41,15 +41,6 @@ const david = {
 
 ### 🚀 Repositories
 
-| Project | What it does | Stack |
-|---|---|---|
-| 📸 **[Sort](https://github.com/CDAVIO/Sort)** | Free photo organizer for macOS and Windows. Sorts your camera roll into folders by device, date and place, offline, with no account. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) ![Stars](https://img.shields.io/github/stars/CDAVIO/Sort?style=flat-square&color=ffd905&labelColor=1c0b36) |
-| 🧹 **[MacUp Cleaner](https://github.com/CDAVIO/MacUp-Cleaner-CDAV.IO)** | Open-source Mac health tool for the Terminal: clears hidden "System Data" caches, checks battery, SSD, RAM, CPU, GPU and security, exports a PDF report. | ![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white) ![macOS](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white) |
-| 🔤 **[Diacritics Remover](https://github.com/CDAVIO/Diacritics-remover)** | Paste text with ș ț ă â î, Polish, Nordic or German letters and get clean plain text, copied automatically. Runs in your browser. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
-| 🌐 **[CDAV.IO](https://github.com/CDAVIO/CDAV.IO)** | Landing page for CDAV.IO: trading education in International Sign Language. | ![HTML](https://img.shields.io/badge/HTML-e34f26?style=flat-square&logo=html5&logoColor=white) |
-
-### 📈 GitHub streak
-
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=CDAVIO&theme=github-dark-blue&hide_border=true&background=1C0B36&ring=FFD905&fire=FFD905&currStreakLabel=FFD905&sideLabels=E9E3FF&dates=A78BFA&stroke=3B0F7A" alt="GitHub streak" />
+  <a href="https://github.com/CDAVIO?tab=repositories"><img src="assets/btn-repos.svg" alt="View my repositories" height="56" /></a>
 </p>
