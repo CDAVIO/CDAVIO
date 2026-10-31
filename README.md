@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.instagram.com/cdav.io/"><img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" /></a>
+  <img src="assets/banner.svg" alt="CDAV.IO — Trader | Building a trading super intelligence" width="100%" />
 </p>
 
 <p align="center">
