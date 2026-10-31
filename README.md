@@ -39,29 +39,6 @@ const david = {
 | 🎮 **Games** | Game dev experiments, from prototypes to playable builds |
 | 🌐 **Web** | Fast, accessible sites and apps, built Deaf-first |
 
-### 🤖 AI-first builder
-
-I use AI every day to **save time** and ship faster, from code to content.
-
-| | What I make with AI |
-|---|---|
-| 💻 **Code & apps** | macOS tools, websites, trading tools and games |
-| 📄 **Documents** | Courses, guides, trading plans and reports |
-| 🖼️ **Images** | Thumbnails, social posts, brand visuals |
-| 🎬 **Video** | Lessons, shorts and edits for YouTube and Instagram |
-| 🎵 **Audio & music** | Music, sound and voice for videos |
-
-**Tools I use**
-<br />
-<img src="https://img.shields.io/badge/Claude-1c0b36?style=for-the-badge&logo=claude&logoColor=D97757" alt="Claude" />
-<img src="https://img.shields.io/badge/Figma-1c0b36?style=for-the-badge&logo=figma&logoColor=F24E1E" alt="Figma" />
-<img src="https://img.shields.io/badge/Canva-1c0b36?style=for-the-badge&logoColor=white" alt="Canva" />
-<img src="https://img.shields.io/badge/Framer-1c0b36?style=for-the-badge&logo=framer&logoColor=white" alt="Framer" />
-<img src="https://img.shields.io/badge/Notion-1c0b36?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
-<img src="https://img.shields.io/badge/Supabase-1c0b36?style=for-the-badge&logo=supabase&logoColor=3ECF8E" alt="Supabase" />
-<img src="https://img.shields.io/badge/GitHub-1c0b36?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-<img src="https://img.shields.io/badge/macOS-1c0b36?style=for-the-badge&logo=apple&logoColor=white" alt="macOS" />
-
 ### 🚀 Repositories
 
 | Project | What it does | Stack |
