@@ -53,5 +53,3 @@ const david = {
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=CDAVIO&theme=github-dark-blue&hide_border=true&background=1C0B36&ring=FFD905&fire=FFD905&currStreakLabel=FFD905&sideLabels=E9E3FF&dates=A78BFA&stroke=3B0F7A" alt="GitHub streak" />
 </p>
-
-<p align="center"><sub>Education only. Not financial advice.</sub></p>
