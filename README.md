@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://cdav.io/"><img src="cards/hero.svg" alt="Cristea David. Deaf, founder of CDAV.IO, building a trading super intelligence" width="100%" /></a>
+  <a href="https://cdav.io/"><img src="cards/intro.svg" alt="Cristea David. Deaf, founder of CDAV.IO, building a trading super intelligence" width="100%" /></a>
 </p>
 
 <p align="center">
