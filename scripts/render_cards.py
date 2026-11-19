@@ -1,23 +1,20 @@
 #!/usr/bin/env python3
 """Render the animated SVG cards shown in the profile README.
 
-Reads data/contributions.json and data/portrait.png, writes cards/*.svg.
+Reads data/contributions.json, writes cards/*.svg.
 STATIC=1 renders every card at its final frame (for screenshots).
 
 Refresh the contribution data first with:
     python3 scripts/render_cards.py --fetch
 """
-import base64
 from html import escape
 import datetime as dt
-import io
 import json
 import os
 import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from icons import SOCIAL  # noqa: E402
@@ -78,78 +75,51 @@ def svg(w, h, label, body, extra_css=""):
 
 # ---------------------------------------------------------------- hero
 
-def ascii_portrait(img, cols=84, rows=46):
-    """Map the portrait to characters; the grey studio backdrop becomes blank."""
-    small = img.resize((cols, rows), Image.LANCZOS)
-    ramp = " .:-=+*#%@"
-    lines = []
-    for y in range(rows):
-        line = ""
-        for x in range(cols):
-            r, g, b = small.getpixel((x, y))
-            lum = 0.299 * r + 0.587 * g + 0.114 * b
-            cx, cy = (x + .5) / cols - .5, (y + .5) / rows - .5
-            if cx * cx + cy * cy > .235 or (b - r >= 5 and lum > 64):
-                line += " "
-            else:
-                line += ramp[min(9, int(lum / 256 * 10))]
-        lines.append(line)
-    return lines
-
-
 def hero():
-    w, h = 1200, 400
-    img = Image.open(DATA / "portrait.png").convert("RGB")
-    buf = io.BytesIO()
-    img.resize((300, 300), Image.LANCZOS).save(buf, "PNG", optimize=True)
-    photo = base64.b64encode(buf.getvalue()).decode()
-
-    cx, cy, r = 230, 200, 148
-    rows = ascii_portrait(img)
-    row_h = 2 * r / len(rows)
-    def ink(t):  # lavender at the top, yellow at the bottom
-        a, b = (0xc4, 0xb5, 0xfd), (0xff, 0xd9, 0x05)
-        return "#" + "".join(f"{round(x + (y - x) * t):02x}" for x, y in zip(a, b))
-    ascii_rows = "\n".join(
-        f'<text class="m fade" x="{cx - r}" y="{cy - r + (i + .8) * row_h:.1f}" font-size="{row_h * 1.05:.2f}" fill="{ink(i / len(rows))}" '
-        f'textLength="{2 * r}" lengthAdjust="spacingAndGlyphs" xml:space="preserve" {delay(i * .025)}>{line}</text>'
-        for i, line in enumerate(rows) if line.strip()
-    )
-    photo_in = len(rows) * .025 + .4
+    """Centred name card over animated purple water (the avatar already shows the face)."""
+    w, h, mid = 1200, 380, 600
 
     chips = ["Game dev", "Web & SaaS", "AI & Python", "Trading"]
-    chip_svg, x = [], 430
-    for i, label in enumerate(chips):
-        cw = 22 + len(label) * 10.2
+    widths = [22 + len(label) * 10.2 for label in chips]
+    x = mid - (sum(widths) + 12 * (len(chips) - 1)) / 2
+    chip_svg = []
+    for i, (label, cw) in enumerate(zip(chips, widths)):
         chip_svg.append(
-            f'<g class="pop" {delay(1.25 + i * .12)}><rect x="{x}" y="280" width="{cw:.0f}" height="38" rx="19" '
+            f'<g class="pop" {delay(1.0 + i * .12)}><rect x="{x:.0f}" y="262" width="{cw:.0f}" height="38" rx="19" '
             f'fill="#ffffff" fill-opacity=".07" stroke="{LAVENDER}" stroke-opacity=".45"/>'
-            f'<text class="s" x="{x + cw / 2:.0f}" y="305" text-anchor="middle" font-size="17" font-weight="600" fill="{WHITE}">{escape(label)}</text></g>'
+            f'<text class="s" x="{x + cw / 2:.0f}" y="287" text-anchor="middle" font-size="17" font-weight="600" fill="{WHITE}">{escape(label)}</text></g>'
         )
         x += cw + 12
 
     shine = "" if STATIC else '<animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1.6 0;1.6 0" keyTimes="0;.45;1" dur="4.5s" begin="1.4s" repeatCount="indefinite"/>'
 
-    body = background(w, h, glow_x=.2) + f"""
+    def wave(fill, d, dur, reverse=False):
+        move = "" if STATIC else (f'<animateTransform attributeName="transform" type="translate" from="{"-1200" if reverse else "0"} 0" '
+                                  f'to="{"0" if reverse else "-1200"} 0" dur="{dur}s" repeatCount="indefinite"/>')
+        return f'<path fill="url(#{fill})" d="{d}">{move}</path>'
+
+    body = background(w, h, glow_x=.5) + f"""
     <defs>
-      <clipPath id="face"><circle cx="{cx}" cy="{cy}" r="{r}"/></clipPath>
       <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
         <stop offset="0" stop-color="{WHITE}"/><stop offset=".42" stop-color="{WHITE}"/>
         <stop offset=".5" stop-color="{YELLOW}"/><stop offset=".58" stop-color="{WHITE}"/><stop offset="1" stop-color="{WHITE}"/>
         {shine}
       </linearGradient>
+      <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b5cf6" stop-opacity=".45"/><stop offset="1" stop-color="#4c1d95" stop-opacity=".12"/></linearGradient>
+      <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{VIOLET}" stop-opacity=".6"/><stop offset="1" stop-color="#2e1065" stop-opacity=".4"/></linearGradient>
+      <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b0f7a"/><stop offset="1" stop-color="{BG0}"/></linearGradient>
     </defs>
 
-    <!-- portrait: ASCII prints in row by row, then the photo resolves over it -->
-    <circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="{BG0}"/>
-    <g clip-path="url(#face)">{ascii_rows}</g>
-    <image class="fade" {delay(photo_in)} href="data:image/png;base64,{photo}" x="{cx - 150}" y="{cy - 150}" width="300" height="300" clip-path="url(#face)"/>
-
     <!-- copy -->
-    <text class="s rise" {delay(.3)} x="426" y="158" font-size="76" font-weight="800" fill="{WHITE}" letter-spacing="-2">Cristea <tspan fill="url(#shine)">David</tspan></text>
-    <text class="s rise" {delay(.6)} x="430" y="210" font-size="26" font-weight="600" fill="{LAVENDER}">Deaf · Founder of <tspan fill="{WHITE}">CDAV.</tspan><tspan fill="{YELLOW}">IO</tspan></text>
-    <text class="s rise" {delay(.8)} x="430" y="250" font-size="26" font-weight="600" fill="{WHITE}">Building a trading <tspan fill="{YELLOW}">super intelligence</tspan></text>
+    <text class="s rise" {delay(.2)} x="{mid}" y="148" text-anchor="middle" font-size="84" font-weight="800" fill="{WHITE}" letter-spacing="-2">Cristea <tspan fill="url(#shine)">David</tspan></text>
+    <text class="s rise" {delay(.45)} x="{mid}" y="202" text-anchor="middle" font-size="27" font-weight="600" fill="{LAVENDER}">Deaf · Founder of <tspan fill="{WHITE}">CDAV.</tspan><tspan fill="{YELLOW}">IO</tspan></text>
+    <text class="s rise" {delay(.65)} x="{mid}" y="240" text-anchor="middle" font-size="27" font-weight="600" fill="{WHITE}">Building a trading <tspan fill="{YELLOW}">super intelligence</tspan></text>
     {''.join(chip_svg)}
+
+    <!-- water: each path holds two identical 1200px periods and slides by one -->
+    {wave("w1", "M0 336 C150 318 300 318 450 336 S750 354 900 336 S1050 318 1200 336 C1350 318 1500 318 1650 336 S1950 354 2100 336 S2250 318 2400 336 V380 H0Z", 16)}
+    {wave("w2", "M0 350 C200 334 400 366 600 350 S1000 334 1200 350 C1400 334 1600 366 1800 350 S2200 334 2400 350 V380 H0Z", 12, reverse=True)}
+    {wave("w3", "M0 364 C150 356 300 372 450 364 S750 356 900 364 S1050 372 1200 364 C1350 356 1500 372 1650 364 S1950 356 2100 364 S2250 372 2400 364 V380 H0Z", 9)}
   </g>"""
     return svg(w, h, "Cristea David. Deaf, founder of CDAV.IO, building a trading super intelligence", body)
 
