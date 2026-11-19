@@ -336,7 +336,7 @@ def main():
     if "--fetch" in sys.argv:
         fetch()
     CARDS.mkdir(exist_ok=True)
-    (CARDS / "hero.svg").write_text(hero())
+    (CARDS / "intro.svg").write_text(hero())
     (CARDS / "activity.svg").write_text(activity())
     for i, t in enumerate(TILES):
         (CARDS / f"tile-{t[0]}.svg").write_text(tile(i, *t))
