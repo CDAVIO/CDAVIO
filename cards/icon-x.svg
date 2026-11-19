@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="x">
+<style>
+.s { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+.m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.rise { animation: rise .7s cubic-bezier(.2,.8,.2,1) both; }
+.fade { animation: fade .6s ease both; }
+.pop  { animation: pop .45s cubic-bezier(.3,1.6,.5,1) both; transform-box: fill-box; transform-origin: center; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pop  { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a0f52"/><stop offset="1" stop-color="#1c0b36"/></linearGradient>
+    <linearGradient id="gw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#ececf4"/><stop offset="1" stop-color="#b9b9cc"/></linearGradient>
+    <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
+  <rect x=".75" y=".75" width="62.5" height="62.5" rx="16" fill="url(#bbg)" stroke="#6d28d9" stroke-width="1.5"/>
+  <rect x="2" y="2" width="60" height="30.0" rx="14" fill="url(#hl)"/>
+  <svg x="18" y="18" width="28" height="28" viewBox="0 0 16 16" fill="url(#gw)"><path d="m9.237 7.004l4.84-5.505H12.93L8.727 6.28L5.371 1.5H1.5l5.075 7.228L1.5 14.499h1.147l4.437-5.047l3.545 5.047H14.5zM7.666 8.791l-.514-.72L3.06 2.344h1.762l3.302 4.622l.514.72l4.292 6.007h-1.761z"/></svg>
+</svg>
